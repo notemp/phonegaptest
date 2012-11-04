@@ -10,9 +10,10 @@
 	<body>
 		<div data-role="page" id="magazines">
 			<div data-role="header" data-position="fixed">
-				<h2>Magazines</h2>
-				<a href="index.html" data-ajax="false"  data-icon="arrow-l" data-direction="reverse" class="ui-btn-left jqm-home">Back</a>
-				<a href="#" data-icon="arrow-r" data-iconpos="right" class="ui-btn-right">Next</a>
+					<h2>Magazines</h2>
+					
+				<a href="index.html" data-ajax="false"  data-icon="arrow-l" data-rel="back" data-transition="slide">Back</a>
+				<a href="#" data-icon="arrow-r" data-iconpos="right">Next</a>
 			</div>
 
 			<div data-role="content">
@@ -85,7 +86,7 @@
 				<div data-role="navbar" class="nav-glyphish-example"  data-grid="d">
 					<ul>
 						<li>
-							<a href="index.html" id="home" data-icon="custom" data-ajax="false">Home</a>
+							<a href="index.html" id="home" data-icon="custom" data-ajax="false" data-transition="slide">Home</a>
 						</li>
 						<li>
 							<a href="#" id="games" data-icon="custom">Games</a>
