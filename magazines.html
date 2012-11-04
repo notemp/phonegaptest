@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Phonegap Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+		<script src="jquery.js"></script>
+		<script src="jquery.mobile-1.2.0.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="magazines">
+			<div data-role="header" data-position="fixed">
+				<h2>Magazines</h2>
+				<a onclick="window.open('index.html')"  data-icon="arrow-l" data-direction="reverse" class="ui-btn-left jqm-home">Back</a>
+				<a onclick="navigator.app.exitApp()" data-icon="arrow-r" data-iconpos="right" class="ui-btn-right">Next</a>
+			</div>
+
+			<div data-role="content">
+
+				<div>
+					<ul data-role="listview" class="ui-listview">
+						<li>
+							<a href="#" data-transition="slide">Swathi</a>
+						</li>
+						<li>
+							<a href="#" data-transition="slide">Andhrabhumi</a>
+						</li>
+						<li>
+							<a href="#" data-transition="slide">India Today</a>
+						</li>
+						<li>
+							<a href="#" data-transition="slide">The Hindu</a>
+						</li>
+						<li>
+							<a href="#" data-transition="slide">Eenadu</a>
+						</li>
+						<li>
+							<a href="#" data-transition="slide">Annadata</a>
+						</li>
+						<li>
+							<a href="#" data-transition="slide">Chandamama</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-----------------------------footer------------------------------------------>
+			<style>
+				.nav-glyphish-example .ui-btn .ui-btn-inner {
+					padding-top: 40px !important;
+				}
+				.nav-glyphish-example .ui-btn .ui-icon {
+					width: 30px !important;
+					height: 30px !important;
+					margin-left: -15px !important;
+					box-shadow: none !important;
+					-moz-box-shadow: none !important;
+					-webkit-box-shadow: none !important;
+					-webkit-border-radius: 0 !important;
+					border-radius: 0 !important;
+				}
+				#home .ui-icon {
+					background: url(glyphish-icons/white/53-house.png) 50% 50% no-repeat;
+					background-size: 24px 22px;
+				}
+				#games .ui-icon {
+					background: url(glyphish-icons/white/13-target.png) 50% 50% no-repeat;
+					background-size: 24px 16px;
+				}
+				#account .ui-icon {
+					background: url(glyphish-icons/white/111-user.png) 50% 50% no-repeat;
+					background-size: 12px 26px;
+				}
+				#rewards .ui-icon {
+					background: url(glyphish-icons/white/24-gift.png) 50% 50% no-repeat;
+					background-size: 22px 27px;
+				}
+				#leader .ui-icon {
+					background: url(glyphish-icons/white/112-group.png) 50% 50% no-repeat;
+					background-size: 20px 24px;
+				}
+			</style>
+
+			<div data-role="footer" data-position="fixed" class="nav-glyphish-example">
+				<div data-role="navbar" class="nav-glyphish-example"  data-grid="d">
+					<ul>
+						<li>
+							<a href="index.html" id="home" data-icon="custom">Home</a>
+						</li>
+						<li>
+							<a href="#" id="games" data-icon="custom">Games</a>
+						</li>
+						<li>
+							<a href="#" id="account" data-icon="custom">My Account</a>
+						</li>
+						<li>
+							<a href="#" id="rewards" data-icon="custom">Rewards</a>
+						</li>
+						<li>
+							<a href="#" id="leader" data-icon="custom">Leaderboard</a>
+						</li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+
+	</body>
+</html>
