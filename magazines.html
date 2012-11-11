@@ -9,6 +9,27 @@
 	</head>
 	<body>
 		<div data-role="page" id="magazines">
+
+			<script type="text/javascript">
+				
+				var getData = function(){
+
+					$.getJSON("http://news.peacock.aggustudios.com/news.json", function (data) {
+						var items = [];
+    							$.each(data, function(key, val){
+									items.push('<li><a href="#' + val.lid + '" data-transition="slide">' + val.lname + '</a></li>');    								
+    							});
+    							$("#maglist").html(items.join(" "));
+    							$("#maglist").listview("refresh");
+						});
+
+				};
+				
+				$("#magazines").bind('pageinit', function(event,data){
+					getData();
+				});
+				
+			</script>
 			<div data-role="header" data-position="fixed">
 					<h2>Magazines</h2>
 					
@@ -19,7 +40,7 @@
 			<div data-role="content">
 
 				<div>
-					<ul data-role="listview" class="ui-listview">
+					<ul data-role="listview" class="ui-listview" id="maglist">
 						<li>
 							<a href="#" data-transition="slide">Swathi</a>
 						</li>
